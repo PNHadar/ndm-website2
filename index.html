@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
+    <meta name="description" content="NeuroHINTS Labs (v2 Editorial Edition) — Human Intracranial Neurophysiology, Neurotechnology, and Stimulation across MGH, BWH, and Harvard Medical School." />
+    <title>NeuroHINTS Labs | Human Intracranial Neurophysiology, Neurotechnology & Stimulation — MGH, BWH & Harvard</title>
+    <link rel="icon" type="image/svg+xml" href="./photos/neurohints_mark.svg" />
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('neurohints-mgb-theme');
+          document.documentElement.setAttribute('data-theme', saved === 'dark' ? 'dark' : 'light');
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      })();
+    </script>
+    <style>body{background-color:#ffffff;color:#071936;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;margin:0}html[data-theme="dark"] body{background-color:#041226;color:#f2f8fc}</style>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link visually-hidden">Skip to main content</a>
+
+    <!-- Official Mass General Brigham (MGB) Institutional Ribbon -->
+    <div class="inst-ribbon">
+      <div class="container inst-ribbon__inner">
+        <div class="inst-ribbon__left">
+          <img src="./photos/mgb_logo_white.svg" alt="Mass General Brigham" width="148" height="22" style="block-size: 1.25rem; inline-size: auto;" />
+          <span class="inst-pill">MGH &bull; BWH &bull; HMS</span>
+          <span>Department of Neurology &bull; Massachusetts General Hospital, Brigham &amp; Women&rsquo;s Hospital &amp; Harvard Medical School</span>
+        </div>
+        <div class="inst-ribbon__right">
+          <a href="https://www.massgeneral.org/neurology/cntr" target="_blank" rel="noopener noreferrer">Center for Neurotechnology &amp; Neurorecovery (CNTR)</a>
+          <span aria-hidden="true">&bull;</span>
+          <a href="./resources/index.html">Pipelines &amp; Publications</a>
+          <span aria-hidden="true">&bull;</span>
+          <a href="./contact/index.html#patients">For Patients &amp; Families &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Primary Editorial Header -->
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a href="./index.html" class="nav-brand" aria-label="NeuroHINTS Labs Home">
+          <img src="./photos/neurohints_mark.svg" alt="" class="nav-brand__mark" width="52" height="44" />
+          <div class="nav-brand__text">
+            <span class="nav-brand__title"><span class="neuro-word">Neuro</span><span class="hints-word">HINTS</span><span class="labs-word">LABS</span></span>
+            <span class="nav-brand__sub">Human Intracranial Neurophysiology, Neurotechnology &amp; Stimulation</span>
+          </div>
+        </a>
+
+        <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+          <ul>
+            <li><a href="./index.html" class="nav-link" aria-current="page">Home</a></li>
+            <li><a href="./research/index.html" class="nav-link">Projects &amp; Teams</a></li>
+            <li><a href="./people/index.html" class="nav-link">People &amp; Labs</a></li>
+            <li><a href="./resources/index.html" class="nav-link">Pipelines &amp; Progress</a></li>
+            <li><a href="./contact/index.html" class="nav-link">Patients &amp; Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <button type="button" id="search-open-btn" class="nav-icon-btn" aria-label="Search site (Command K)">
+            <span aria-hidden="true">&#8981;</span>
+            <span>Search</span>
+            <kbd class="kbd-hint">&#8984;K</kbd>
+          </button>
+          <button type="button" id="theme-toggle" class="nav-icon-btn" aria-pressed="false">
+            <span aria-hidden="true">&#9680;</span>
+            <span>MGB Cobalt</span>
+          </button>
+          <button type="button" id="mobile-menu-toggle" class="nav-icon-btn mobile-menu-btn" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle Menu">
+            <span aria-hidden="true">&#9776;</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+
+      <!-- Sub-navigation Quick Jump Strip (Brain Modulation Lab style: Projects / People / Pipelines / Media / Patients) -->
+      <div class="subnav-strip">
+        <div class="container subnav-strip__inner">
+          <div style="font-weight:700;color:var(--mgb-navy);font-size:0.76rem;text-transform:uppercase;letter-spacing:0.05em;">
+            Explore NeuroHINTS:
+          </div>
+          <div class="subnav-pills">
+            <a href="#groups-section" class="subnav-pill">01 &bull; 6 Research Groups</a>
+            <a href="#teams-editorial" class="subnav-pill">02 &bull; 5 Collaborative Teams</a>
+            <a href="#media-lab-life" class="subnav-pill">03 &bull; Video, Podcast &amp; Lab Life</a>
+            <a href="#press-progress" class="subnav-pill">04 &bull; In the Media &amp; Progress</a>
+            <a href="#pi-labs-home" class="subnav-pill">05 &bull; 5 Affiliated PI Labs</a>
+            <a href="#patient-guide" class="subnav-pill">06 &bull; For Patients &amp; Families</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 1. Editorial Hero with Interactive Multimedia Story Reel (McGovern + Zuckerman + Coma Recovery Lab inspired) -->
+      <section class="editorial-hero">
+        <div class="container editorial-hero__grid">
+          <div>
+            <div class="eyebrow-tag">
+              <span class="eyebrow-dot"></span>
+              <span>Mass General Brigham &bull; MGH &bull; BWH &bull; Harvard Medical School</span>
+            </div>
+            <h1 class="editorial-title">
+              Decoding &amp; modulating the <em>living human brain</em> at single-neuron resolution.
+            </h1>
+            <p class="editorial-lead">
+              Working alongside patients in the Epilepsy Monitoring Unit and operating room, the <strong>NeuroHINTS Labs</strong> unite clinical neurophysiology, high-density neural engineering, and mechanistic AI across five affiliated laboratories at MGH, BWH, and Harvard.
+            </p>
+            <div class="hero-cta-row">
+              <a href="./research/index.html" class="btn btn--primary">Explore Projects &amp; Teams &rarr;</a>
+              <a href="#media-lab-life" class="btn btn--secondary">&#9654; Watch Lab Reel &amp; Talks</a>
+              <a href="./people/index.html" class="btn btn--secondary">Meet the 18 Researchers</a>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0.85rem;padding-block-start:1.25rem;border-block-start:1px solid var(--border-subtle);">
+              <div>
+                <div style="font-family:var(--font-editorial);font-size:1.75rem;font-weight:700;color:var(--mgb-navy);">6</div>
+                <div style="font-size:0.75rem;color:var(--text-muted);font-weight:600;">Research Groups</div>
+              </div>
+              <div>
+                <div style="font-family:var(--font-editorial);font-size:1.75rem;font-weight:700;color:var(--mgb-teal);">5</div>
+                <div style="font-size:0.75rem;color:var(--text-muted);font-weight:600;">Affiliated PI Labs</div>
+              </div>
+              <div>
+                <div style="font-family:var(--font-editorial);font-size:1.75rem;font-weight:700;color:var(--hints-green);">200+</div>
+                <div style="font-size:0.75rem;color:var(--text-muted);font-weight:600;">Peer-Reviewed Studies</div>
+              </div>
+              <div>
+                <div style="font-family:var(--font-editorial);font-size:1.75rem;font-weight:700;color:var(--neuro-purple);">&mu;m &bull; ms</div>
+                <div style="font-size:0.75rem;color:var(--text-muted);font-weight:600;">Human Neural Scale</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Multimedia Story Reel Card -->
+          <div class="story-reel-card" aria-label="Interactive Lab & Operating Room Multimedia Story Reel">
+            <div class="story-reel__stage">
+              <img
+                id="reel-stage-img"
+                src="./photos/NeurotechnologyTeam_primary.png"
+                alt="Intraoperative human cortical recording and neural engineering"
+                class="story-reel__img"
+                width="800"
+                height="500"
+                fetchpriority="high"
+              />
+              <div class="story-reel__overlay">
+                <div class="story-reel__top">
+                  <span id="reel-stage-badge" class="live-badge">&#9679; Inside the OR &bull; Neuropixels &amp; PEDOT:PSS</span>
+                  <span style="font-family:var(--font-mono);font-size:0.72rem;color:rgba(255,255,255,0.8);background:rgba(0,0,0,0.45);padding:0.2rem 0.55rem;border-radius:0.35rem;">MGH / BWH / HMS</span>
+                </div>
+                <div class="story-reel__caption">
+                  <h3 id="reel-stage-title">Intraoperative Single-Neuron Recording in Human Cortex</h3>
+                  <p id="reel-stage-desc">
+                    High-density Neuropixels and organic PEDOT:PSS micro-arrays resolve hundreds of individual cortical neurons simultaneously across human cortical laminae during awake neurosurgery.
+                  </p>
+                  <div style="margin-block-start:0.75rem;">
+                    <a id="reel-stage-link" href="./research/neurotechnology/index.html" style="color:var(--mgb-aqua);font-size:0.82rem;font-weight:700;">Read Story &amp; View Figures &rarr;</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="story-reel__tabs" role="tablist" aria-label="Featured Visual Chapters">
+              <button
+                type="button"
+                role="tab"
+                aria-selected="true"
+                class="story-reel__tab is-active"
+                data-reel-tab
+                data-img="./photos/NeurotechnologyTeam_primary.png"
+                data-badge="● Inside the OR • Neuropixels & PEDOT:PSS"
+                data-title="Intraoperative Single-Neuron Recording in Human Cortex"
+                data-desc="High-density Neuropixels and organic PEDOT:PSS micro-arrays resolve hundreds of individual cortical neurons simultaneously across human cortical laminae during awake neurosurgery."
+                data-href="./research/neurotechnology/index.html"
+              >
+                <span class="story-reel__tab-num">01 / OR</span>
+                <span class="story-reel__tab-label">Human Neuropixels</span>
+              </button>
+              <button
+                type="button"
+                role="tab"
+                aria-selected="false"
+                class="story-reel__tab"
+                data-reel-tab
+                data-img="./photos/EpilepsyTeam_primary.png"
+                data-badge="● Epilepsy Monitoring Unit • Closed-Loop BCI"
+                data-title="Real-Time Closed-Loop Intracranial Stimulation (CLoSES)"
+                data-desc="Millisecond-latency intracranial biomarker detection paired with single-pulse electrical stimulation (SPES/CCEP) to map excitability and disrupt pathological network states."
+                data-href="./research/epilepsy-neuromodulation/index.html"
+              >
+                <span class="story-reel__tab-num">02 / EMU</span>
+                <span class="story-reel__tab-label">Closed-Loop Stimulation</span>
+              </button>
+              <button
+                type="button"
+                role="tab"
+                aria-selected="false"
+                class="story-reel__tab"
+                data-reel-tab
+                data-img="./photos/AITeam_primary.png"
+                data-badge="● Clinical AI • Neuroscience of AI"
+                data-title="Intracranial Foundation Models & Representation Engineering"
+                data-desc="Bridging large-scale clinical neurophysiology with mechanistic interpretability to both decode human brain states and probe internal representations in artificial neural networks."
+                data-href="./research/ai-neurology/index.html"
+              >
+                <span class="story-reel__tab-num">03 / NeuroAI</span>
+                <span class="story-reel__tab-label">AI &amp; Interpretability</span>
+              </button>
+              <button
+                type="button"
+                role="tab"
+                aria-selected="false"
+                class="story-reel__tab"
+                data-reel-tab
+                data-img="./photos/CognitionSleepTeam_primary.png"
+                data-badge="● Sleep & Memory • Thalamocortical Loops"
+                data-title="Coordinated Ripples, Spindles & Human Memory Consolidation"
+                data-desc="Multi-day intracranial recordings reveal how cortical slow oscillations, thalamic spindles, and hippocampal ripples orchestrate human memory and language."
+                data-href="./research/cognition-sleep/index.html"
+              >
+                <span class="story-reel__tab-num">04 / Sleep</span>
+                <span class="story-reel__tab-label">Memory &amp; Oscillations</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Full-Bleed Soft Aqua Band: 6 Specialized Research Groups -->
+      <section id="groups-section" class="band band--aqua">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="eyebrow-tag" style="background:var(--bg-surface);">Six Specialized Research Identities</div>
+              <h2 class="section-title">The Six NeuroHINTS Research Groups</h2>
+              <p class="section-desc">
+                Each research group carries its own polygonal brain identity and methodological focus while collaborating seamlessly across the operating room, Epilepsy Monitoring Unit, and computational cluster.
+              </p>
+            </div>
+            <a href="./research/index.html" class="btn btn--secondary">View All Group Portals &rarr;</a>
+          </div>
+
+          <div class="groups-bento">
+            <a href="./research/epilepsy-neuromodulation/index.html" class="group-tile">
+              <img src="./photos/group_mark_stimulation.svg" alt="Stimulation Group" class="group-tile__icon" width="72" height="72" />
+              <div class="group-tile__meta">
+                <span class="group-tile__kicker">Group 01 &bull; Neuromodulation</span>
+                <h3 class="group-tile__name">Stimulation Group</h3>
+                <p class="group-tile__sub">SPES &bull; CCEP Connectivity &bull; Closed-Loop Intracranial BCI</p>
+              </div>
+            </a>
+
+            <a href="./research/epilepsy-neuromodulation/index.html" class="group-tile">
+              <img src="./photos/group_mark_epilepsy.svg" alt="Epilepsy Group" class="group-tile__icon" width="72" height="72" />
+              <div class="group-tile__meta">
+                <span class="group-tile__kicker">Group 02 &bull; Clinical Neurophysiology</span>
+                <h3 class="group-tile__name">Epilepsy Group</h3>
+                <p class="group-tile__sub">sEEG Networks &bull; Microseizures &bull; Ictal Onset &amp; Termination</p>
+              </div>
+            </a>
+
+            <a href="./research/cancer-neuroscience/index.html" class="group-tile">
+              <img src="./photos/group_mark_tumor.svg" alt="Tumor Group" class="group-tile__icon" width="72" height="72" />
+              <div class="group-tile__meta">
+                <span class="group-tile__kicker">Group 03 &bull; Neuro-Oncology</span>
+                <h3 class="group-tile__name">Tumor Group</h3>
+                <p class="group-tile__sub">Cancer Neuroscience &bull; Glioma Hyperexcitability &bull; Awake Mapping</p>
+              </div>
+            </a>
+
+            <a href="./research/cognition-sleep/index.html" class="group-tile">
+              <img src="./photos/group_mark_sleep.svg" alt="Sleep Group" class="group-tile__icon" width="72" height="72" />
+              <div class="group-tile__meta">
+                <span class="group-tile__kicker">Group 04 &bull; Thalamocortical Rhythms</span>
+                <h3 class="group-tile__name">Sleep Group</h3>
+                <p class="group-tile__sub">Slow Oscillations &bull; Spindles &amp; Ripples &bull; Memory Consolidation</p>
+              </div>
+            </a>
+
+            <a href="./research/cognition-sleep/index.html" class="group-tile">
+              <img src="./photos/group_mark_cognitive.svg" alt="Cognitive Group" class="group-tile__icon" width="72" height="72" />
+              <div class="group-tile__meta">
+                <span class="group-tile__kicker">Group 05 &bull; Human Microcircuits</span>
+                <h3 class="group-tile__name">Cognitive Group</h3>
+                <p class="group-tile__sub">Language &amp; Semantic Coding &bull; Executive Control &bull; Single Units</p>
+              </div>
+            </a>
+
+            <a href="./research/ai-neurology/index.html" class="group-tile">
+              <img src="./photos/group_mark_neurotech_ai.svg" alt="NeuroTechnology and NeuroAI Group" class="group-tile__icon" width="72" height="72" />
+              <div class="group-tile__meta">
+                <span class="group-tile__kicker">Group 06 &bull; Devices &amp; Foundation AI</span>
+                <h3 class="group-tile__name">NeuroTechnology &amp; NeuroAI Group</h3>
+                <p class="group-tile__sub">Clinical AI &bull; Mechanistic Interpretability &amp; Representation Engineering &bull; NeuroDevices</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Alternating Editorial Split Rows: 5 Collaborative Research Teams (Brain Modulation Lab & Columbia Zuckerman Inspired) -->
+      <section id="teams-editorial" class="band band--white">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="eyebrow-tag">Brain Modulation &amp; Circuit Architecture</div>
+              <h2 class="section-title">Five Collaborative Research Teams</h2>
+              <p class="section-desc">
+                Inspired by modern clinical-translational neuroscience institutes, our research is structured into five cross-laboratory teams uniting neurologists, neurosurgeons, physicists, and AI engineers.
+              </p>
+            </div>
+            <a href="./research/index.html" class="btn btn--primary">Full Research Matrix &rarr;</a>
+          </div>
+
+          <div class="editorial-rows">
+            <!-- Row 01 -->
+            <article class="editorial-row">
+              <div class="editorial-row__media">
+                <img src="./photos/EpilepsyTeam_primary.png" alt="Epilepsy and Neuromodulation intracranial network mapping" width="720" height="450" loading="lazy" />
+                <span class="editorial-row__badge">TEAM 01 &bull; EPILEPSY &amp; NEUROMODULATION</span>
+              </div>
+              <div class="editorial-row__body">
+                <span class="editorial-row__labs">Cash, Paulk, Zelmann &amp; Salami Labs</span>
+                <h3 class="editorial-row__title">Epilepsy &amp; Neuromodulation</h3>
+                <p class="editorial-row__desc">
+                  Investigating multi-scale seizure dynamics from microdomain onset to large-scale cortical propagation, paired with single-pulse electrical stimulation (SPES/CCEP) and state-dependent closed-loop neuromodulation to prevent seizures and restore cognitive function.
+                </p>
+                <ul class="editorial-row__questions">
+                  <li>How do microscale cellular dynamics transition into macroscale clinical seizures across human cortex and thalamus?</li>
+                  <li>How can real-time closed-loop intracranial stimulation (CLoSES) reshape network excitability and improve cognitive outcomes?</li>
+                </ul>
+                <a href="./research/epilepsy-neuromodulation/index.html" class="btn btn--secondary">Explore Epilepsy &amp; Neuromodulation &rarr;</a>
+              </div>
+            </article>
+
+            <!-- Row 02 (Reversed) -->
+            <article class="editorial-row editorial-row--reverse">
+              <div class="editorial-row__media">
+                <img src="./photos/CognitionSleepTeam_primary.png" alt="Cognition and Sleep oscillatory dynamics" width="720" height="450" loading="lazy" />
+                <span class="editorial-row__badge">TEAM 02 &bull; COGNITION &amp; SLEEP</span>
+              </div>
+              <div class="editorial-row__body">
+                <span class="editorial-row__labs">Cash, Paulk, Zelmann &amp; Hadar Labs</span>
+                <h3 class="editorial-row__title">Cognition &amp; Sleep</h3>
+                <p class="editorial-row__desc">
+                  Decoding how single human neurons and thalamocortical oscillations (slow waves, sleep spindles, and sharp-wave ripples) support language, semantic representation, working memory, and offline memory consolidation.
+                </p>
+                <ul class="editorial-row__questions">
+                  <li>How do cortical slow oscillations and thalamic spindles coordinate single-neuron replay during human sleep?</li>
+                  <li>Can targeted acoustic or electrical stimulation during NREM sleep enhance human memory consolidation?</li>
+                </ul>
+                <a href="./research/cognition-sleep/index.html" class="btn btn--secondary">Explore Cognition &amp; Sleep &rarr;</a>
+              </div>
+            </article>
+
+            <!-- Row 03 -->
+            <article class="editorial-row">
+              <div class="editorial-row__media">
+                <img src="./photos/NeurotechnologyTeam_primary.png" alt="Neurotechnology Neuropixels and PEDOT:PSS arrays" width="720" height="450" loading="lazy" />
+                <span class="editorial-row__badge">TEAM 03 &bull; NEUROTECHNOLOGY</span>
+              </div>
+              <div class="editorial-row__body">
+                <span class="editorial-row__labs">Cash, Paulk, Zelmann &amp; Hadar Labs</span>
+                <h3 class="editorial-row__title">Neurotechnology</h3>
+                <p class="editorial-row__desc">
+                  Pioneering next-generation human neural interfaces—from intraoperative high-density Neuropixels probes and thin-film organic PEDOT:PSS micro-electrocorticography (&mu;ECoG) to the open-source CLoSES closed-loop stimulation platform and BrainGate clinical trials.
+                </p>
+                <ul class="editorial-row__questions">
+                  <li>How can we safely record thousands of single units and local field potentials across human cortical layers in the OR and EMU?</li>
+                  <li>How do we translate open-source real-time closed-loop hardware/software into bedside therapeutic devices?</li>
+                </ul>
+                <a href="./research/neurotechnology/index.html" class="btn btn--secondary">Explore Neurotechnology &rarr;</a>
+              </div>
+            </article>
+
+            <!-- Row 04 (Reversed) -->
+            <article class="editorial-row editorial-row--reverse">
+              <div class="editorial-row__media">
+                <img src="./photos/CancerTeam_primary.jpg" alt="Cancer Neuroscience intraoperative glioma mapping" width="720" height="450" loading="lazy" />
+                <span class="editorial-row__badge">TEAM 04 &bull; CANCER NEUROSCIENCE</span>
+              </div>
+              <div class="editorial-row__body">
+                <span class="editorial-row__labs">Paulk &amp; Hadar Labs</span>
+                <h3 class="editorial-row__title">Cancer Neuroscience</h3>
+                <p class="editorial-row__desc">
+                  Probing bidirectional synaptic and electrical coupling between infiltrating gliomas and human cortical microcircuits during awake craniotomies to protect eloquent language/motor networks and disrupt tumor-driven hyperexcitability.
+                </p>
+                <ul class="editorial-row__questions">
+                  <li>How do infiltrating glioma cells remodel local human cortical microcircuits and drive peritumoral hyperexcitability?</li>
+                  <li>Can high-density intraoperative electrophysiological mapping maximize safe resection while preserving eloquent cognition?</li>
+                </ul>
+                <a href="./research/cancer-neuroscience/index.html" class="btn btn--secondary">Explore Cancer Neuroscience &rarr;</a>
+              </div>
+            </article>
+
+            <!-- Row 05 -->
+            <article class="editorial-row">
+              <div class="editorial-row__media">
+                <img src="./photos/AITeam_primary.png" alt="AI in Neurology and Neuroscience of AI" width="720" height="450" loading="lazy" />
+                <span class="editorial-row__badge">TEAM 05 &bull; AI IN NEUROLOGY &amp; NEUROSCIENCE OF AI</span>
+              </div>
+              <div class="editorial-row__body">
+                <span class="editorial-row__labs">Cash &amp; Hadar Labs</span>
+                <h3 class="editorial-row__title">AI in Neurology and Neuroscience of AI</h3>
+                <p class="editorial-row__desc">
+                  Developing foundation models for clinical intracranial &amp; scalp neurophysiology alongside neuroscience-inspired mechanistic interpretability and representation engineering—using virtual reading and stimulation of artificial neural networks in reciprocation with human brain recordings.
+                </p>
+                <ul class="editorial-row__questions">
+                  <li>How can self-supervised foundation models generalize across patient-specific sEEG/EEG geometries for clinical decision support?</li>
+                  <li>How can intracranial neuroscience techniques—virtual lesioning, reading, and causal stimulation—illuminate and steer representations inside large AI models?</li>
+                </ul>
+                <a href="./research/ai-neurology/index.html" class="btn btn--secondary">Explore AI in Neurology &amp; Neuroscience of AI &rarr;</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Deep MGB Navy Band: Personalized Media, Video/Podcast & Lab Life Hub (NEURAL Research Lab Podcast + Coma Recovery Lab + McGovern Inspired) -->
+      <section id="media-lab-life" class="band band--navy">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="eyebrow-tag" style="background:rgba(176,227,226,0.15);color:var(--mgb-aqua);border-color:rgba(176,227,226,0.35);">
+                <span class="eyebrow-dot" style="background:#5CE1E6;"></span>
+                <span>Behind the Science &bull; Media, Talks &amp; Lab Culture</span>
+              </div>
+              <h2 class="section-title">NeuroHINTS Media, Symposia &amp; Life in the Lab</h2>
+              <p class="section-desc" style="color:var(--text-on-navy-muted);">
+                Inspired by modern academic storytelling (MIT McGovern, Columbia Zuckerman, Coma Recovery Lab &amp; NEURAL Podcast), this hub brings together our seminar recordings, trainee career conversations, and real-world photography from the MGH/BWH operating rooms and Boston campus.
+              </p>
+            </div>
+          </div>
+
+          <div class="media-hub-grid">
+            <!-- Left: Interactive Audio/Video Podcast & Seminar Player -->
+            <div id="podcast-player-card" class="podcast-player-card">
+              <div>
+                <div style="display:flex;align-items:center;justify-content:space-between;gap:0.75rem;margin-block-end:1rem;">
+                  <span style="font-family:var(--font-mono);font-size:0.72rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--mgb-aqua);">
+                    &#127911; NeuroHINTS Audio / Video Spotlight
+                  </span>
+                  <span style="font-size:0.75rem;color:var(--text-on-navy-muted);">MGH &bull; BWH &bull; HMS Series</span>
+                </div>
+                <div class="podcast-episode-active">
+                  <div class="podcast-cover">
+                    <img src="./photos/neurohints_mark.svg" alt="" width="64" height="54" />
+                  </div>
+                  <div>
+                    <h3 id="active-episode-title" style="font-size:1.18rem;font-weight:700;margin-block-end:0.25rem;color:#ffffff;">
+                      Ep. 01: Recording Single Neurons in the Human Operating Room
+                    </h3>
+                    <p id="active-episode-meta" style="font-size:0.82rem;color:var(--mgb-aqua);margin:0;">
+                      Drs. Sydney Cash &amp; Angelique Paulk &bull; 28 min &bull; OR Neurophysiology &amp; Neuropixels
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="waveform-bars" aria-hidden="true">
+                  <span class="waveform-bar"></span><span class="waveform-bar"></span><span class="waveform-bar"></span><span class="waveform-bar"></span>
+                  <span class="waveform-bar"></span><span class="waveform-bar"></span><span class="waveform-bar"></span><span class="waveform-bar"></span>
+                  <span class="waveform-bar"></span><span class="waveform-bar"></span><span class="waveform-bar"></span><span class="waveform-bar"></span>
+                  <span class="waveform-bar"></span><span class="waveform-bar"></span><span class="waveform-bar"></span><span class="waveform-bar"></span>
+                  <span class="waveform-bar"></span><span class="waveform-bar"></span><span class="waveform-bar"></span><span class="waveform-bar"></span>
+                  <span class="waveform-bar"></span><span class="waveform-bar"></span><span class="waveform-bar"></span><span class="waveform-bar"></span>
+                </div>
+                <div style="display:flex;align-items:center;justify-content:space-between;gap:0.75rem;margin-block-start:0.65rem;">
+                  <button type="button" id="podcast-play-toggle" class="btn btn--primary" style="background:var(--mgb-teal);padding:0.55rem 1.1rem;font-size:0.84rem;" aria-pressed="false">
+                    <span aria-hidden="true">&#9654;</span> Play Episode Preview
+                  </button>
+                  <span style="font-family:var(--font-mono);font-size:0.74rem;color:var(--text-on-navy-muted);">Select a conversation below &darr;</span>
+                </div>
+              </div>
+
+              <div class="episode-list" role="list" aria-label="Featured Talks and Podcast Episodes">
+                <button
+                  type="button"
+                  class="episode-item is-active"
+                  data-episode-btn
+                  data-ep-title="Ep. 01: Recording Single Neurons in the Human Operating Room"
+                  data-ep-meta="Drs. Sydney Cash & Angelique Paulk • 28 min • OR Neurophysiology & Neuropixels"
+                >
+                  <div>
+                    <div style="font-size:0.86rem;font-weight:700;">01. Single Neurons in the Human Operating Room</div>
+                    <div style="font-size:0.75rem;color:var(--text-on-navy-muted);">How awake craniotomy Neuropixels recordings reveal cortical column architecture</div>
+                  </div>
+                  <span style="font-family:var(--font-mono);font-size:0.74rem;color:var(--mgb-aqua);">28:14</span>
+                </button>
+
+                <button
+                  type="button"
+                  class="episode-item"
+                  data-episode-btn
+                  data-ep-title="Ep. 02: Closed-Loop Brain Stimulation (CLoSES) & Seizure Networks"
+                  data-ep-meta="Drs. Rina Zelmann & Pariya Salami • 32 min • EMU Neuromodulation & Epilepsy"
+                >
+                  <div>
+                    <div style="font-size:0.86rem;font-weight:700;">02. Closed-Loop Brain Stimulation &amp; Seizure Networks</div>
+                    <div style="font-size:0.75rem;color:var(--text-on-navy-muted);">Real-time biomarker detection and state-dependent stimulation in the EMU</div>
+                  </div>
+                  <span style="font-family:var(--font-mono);font-size:0.74rem;color:var(--mgb-aqua);">32:40</span>
+                </button>
+
+                <button
+                  type="button"
+                  class="episode-item"
+                  data-episode-btn
+                  data-ep-title="Ep. 03: Clinical AI, Mechanistic Interpretability & Life in Physician-Scientist Training"
+                  data-ep-meta="Dr. Peter Hadar & NeuroHINTS Trainees • 35 min • NeuroAI, Cancer Neuroscience & Careers"
+                >
+                  <div>
+                    <div style="font-size:0.86rem;font-weight:700;">03. Clinical AI, Neuroscience of AI &amp; Life After PhD/MD</div>
+                    <div style="font-size:0.75rem;color:var(--text-on-navy-muted);">Representation engineering, glioma electrophysiology, and mentoring trainees across HMS/MGH/BWH</div>
+                  </div>
+                  <span style="font-family:var(--font-mono);font-size:0.74rem;color:var(--mgb-aqua);">35:10</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Right: Personalized Lab & Hospital Photo/Video Gallery Slots -->
+            <div style="display:flex;flex-direction:column;justify-content:space-between;gap:1rem;">
+              <div class="photo-bento">
+                <div class="photo-slot-card" data-photo-slot="or-neuropixels">
+                  <img src="./photos/Neurotechnology1.png" alt="Intraoperative neurophysiology setup at MGH and BWH" width="420" height="280" loading="lazy" />
+                  <div class="photo-slot-card__overlay">
+                    <span class="photo-slot-tag">Operating Room &bull; Photo/Video Slot</span>
+                    <div class="photo-slot-title">Intraoperative Electrocorticography &amp; Neuropixels</div>
+                    <div class="photo-slot-hint">Ready for custom OR action photo or `.mp4` clip</div>
+                  </div>
+                </div>
+
+                <div class="photo-slot-card" data-photo-slot="emu-monitoring">
+                  <img src="./photos/Epilepsy1.png" alt="Epilepsy Monitoring Unit closed-loop stimulation" width="420" height="280" loading="lazy" />
+                  <div class="photo-slot-card__overlay">
+                    <span class="photo-slot-tag">MGH / BWH EMU &bull; Photo/Video Slot</span>
+                    <div class="photo-slot-title">Bedside sEEG &amp; Closed-Loop Neuromodulation</div>
+                    <div class="photo-slot-hint">Ready for bedside rig / team photo</div>
+                  </div>
+                </div>
+
+                <div class="photo-slot-card" data-photo-slot="cancer-awake-mapping">
+                  <img src="./photos/CancerTeam_primary.jpg" alt="Awake craniotomy language and tumor mapping" width="420" height="280" loading="lazy" />
+                  <div class="photo-slot-card__overlay">
+                    <span class="photo-slot-tag">Cancer Neuroscience &bull; Photo Slot</span>
+                    <div class="photo-slot-title">Awake Craniotomy Language &amp; Glioma Mapping</div>
+                    <div class="photo-slot-hint">Paulk &amp; Hadar Labs translational neuro-oncology</div>
+                  </div>
+                </div>
+
+                <div class="photo-slot-card" data-photo-slot="lab-culture-team">
+                  <img src="./photos/CognitionSleep1.png" alt="NeuroHINTS Labs collaborative culture across MGH, BWH and HMS" width="420" height="280" loading="lazy" />
+                  <div class="photo-slot-card__overlay">
+                    <span class="photo-slot-tag">Team &amp; Campus &bull; Photo Slot</span>
+                    <div class="photo-slot-title">Life in the Lab: MGH, BWH &amp; Boston Navy Yard</div>
+                    <div class="photo-slot-hint">Ready for group retreat, lab meeting &amp; conference photos</div>
+                  </div>
+                </div>
+              </div>
+
+              <div style="padding:1rem 1.25rem;border-radius:var(--radius-md);background:rgba(255,255,255,0.06);border:1px solid rgba(176,227,226,0.2);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:0.75rem;">
+                <div style="font-size:0.84rem;color:var(--text-on-navy-muted);">
+                  <strong style="color:#ffffff;">Personalized Photo &amp; Video Ready:</strong> Drop any `.jpg`, `.png`, or `.mp4` into <code>public/photos/</code> to showcase real OR recordings, EMU sessions, and team events.
+                </div>
+                <a href="./resources/index.html" style="color:var(--mgb-aqua);font-size:0.84rem;font-weight:700;">View Media Archive &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. "In the Media & Landmark Progress" (Coma Recovery Lab + MIT McGovern Style) -->
+      <section id="press-progress" class="band band--alabaster">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="eyebrow-tag">In the Media &amp; Landmark Discoveries</div>
+              <h2 class="section-title">Recent Progress &amp; Press Highlights</h2>
+              <p class="section-desc">
+                Selected peer-reviewed breakthroughs and institutional news highlights from the NeuroHINTS Labs in <em>Nature</em>, <em>Nature Neuroscience</em>, <em>Science Translational Medicine</em>, and <em>Brain</em>.
+              </p>
+            </div>
+            <a href="./resources/index.html" class="btn btn--secondary">All 200+ Publications &amp; Code &rarr;</a>
+          </div>
+
+          <div class="press-grid">
+            <article class="press-card">
+              <div>
+                <div class="press-journal">Nature &bull; Single-Neuron Human Cortex</div>
+                <h3 class="press-title" style="margin-block:0.5rem 0.65rem;">
+                  Large-scale single-neuron recording across human cortical layers with Neuropixels probes
+                </h3>
+                <p style="font-size:0.9rem;color:var(--text-secondary);">
+                  Paulk et al. (<em>Nature Neuroscience</em>, 2022) and Coughlin et al. (<em>Nature</em>, 2023/2024) demonstrated high-density laminar recordings of hundreds of simultaneously active single neurons in awake human cortex, unveiling cell-type-specific speech and semantic encoding.
+                </p>
+              </div>
+              <div style="display:flex;align-items:center;justify-content:space-between;padding-block-start:0.85rem;border-block-start:1px solid var(--border-subtle);font-size:0.82rem;font-weight:700;">
+                <span style="color:var(--text-muted);">Paulk, Coughlin, Cash et al.</span>
+                <a href="./resources/index.html">Read Paper &amp; Atlas &rarr;</a>
+              </div>
+            </article>
+
+            <article class="press-card">
+              <div>
+                <div class="press-journal">Journal of Neural Engineering &bull; Open Platform</div>
+                <h3 class="press-title" style="margin-block:0.5rem 0.65rem;">
+                  CLoSES: An open-source platform for closed-loop intracranial stimulation in humans
+                </h3>
+                <p style="font-size:0.9rem;color:var(--text-secondary);">
+                  Zelmann et al. engineered and clinically deployed CLoSES in the Epilepsy Monitoring Unit, enabling real-time neural state decoding and millisecond-precision electrical stimulation synchronized to endogenous brain rhythms.
+                </p>
+              </div>
+              <div style="display:flex;align-items:center;justify-content:space-between;padding-block-start:0.85rem;border-block-start:1px solid var(--border-subtle);font-size:0.82rem;font-weight:700;">
+                <span style="color:var(--text-muted);">Zelmann, Paulk, Cash et al.</span>
+                <a href="https://github.com/Center-For-Neurotechnology" target="_blank" rel="noopener noreferrer">GitHub Pipeline &rarr;</a>
+              </div>
+            </article>
+
+            <article class="press-card">
+              <div>
+                <div class="press-journal">Brain &amp; Epilepsia &bull; Seizure Dynamics &amp; Clinical AI</div>
+                <h3 class="press-title" style="margin-block:0.5rem 0.65rem;">
+                  Network signatures of seizure onset, propagation, and mechanistic NeuroAI biomarkers
+                </h3>
+                <p style="font-size:0.9rem;color:var(--text-secondary);">
+                  Salami, Hadar, Cash et al. combine intracranial sEEG network analysis, thalamic recordings, and foundation AI representation engineering to localize seizure networks and predict treatment response.
+                </p>
+              </div>
+              <div style="display:flex;align-items:center;justify-content:space-between;padding-block-start:0.85rem;border-block-start:1px solid var(--border-subtle);font-size:0.82rem;font-weight:700;">
+                <span style="color:var(--text-muted);">Salami, Hadar, Cash et al.</span>
+                <a href="./research/ai-neurology/index.html">Explore NeuroAI &rarr;</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. Five Affiliated Principal Investigator Laboratories -->
+      <section id="pi-labs-home" class="band band--white">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <div class="eyebrow-tag">Leadership &amp; Affiliated Laboratories</div>
+              <h2 class="section-title">Five Affiliated Principal Investigator Labs</h2>
+              <p class="section-desc">
+                The NeuroHINTS Labs bring together five closely collaborating faculty laboratories across Massachusetts General Hospital, Brigham and Women&rsquo;s Hospital, and Harvard Medical School.
+              </p>
+            </div>
+            <a href="./people/index.html" class="btn btn--primary">Full 18-Member Directory &rarr;</a>
+          </div>
+
+          <div class="pi-grid">
+            <article class="pi-card">
+              <div class="pi-card__header">
+                <img src="./photos/SydneyCash_headshot_cropped.jpg" alt="Dr. Sydney Cash" class="pi-avatar" width="64" height="64" loading="lazy" />
+                <div>
+                  <span class="pi-lab-tag">Cash Lab</span>
+                  <h3 class="pi-name">Dr. Sydney Cash, MD, PhD</h3>
+                  <div class="pi-role">Professor of Neurology, HMS &bull; MGH</div>
+                </div>
+              </div>
+              <p style="font-size:0.84rem;color:var(--text-secondary);">
+                Epilepsy neurophysiology, cortical microcircuits, sleep oscillations, BrainGate clinical trials, and clinical AI.
+              </p>
+              <a href="https://cashlab.mgh.harvard.edu/" target="_blank" rel="noopener noreferrer" style="font-size:0.8rem;font-weight:700;margin-block-start:auto;">Visit cashlab.mgh.harvard.edu &nearr;</a>
+            </article>
+
+            <article class="pi-card">
+              <div class="pi-card__header">
+                <img src="./photos/AngeliquePaulk_headshot.png" alt="Dr. Angelique Paulk" class="pi-avatar" width="64" height="64" loading="lazy" />
+                <div>
+                  <span class="pi-lab-tag">Paulk Lab</span>
+                  <h3 class="pi-name">Dr. Angelique Paulk, PhD</h3>
+                  <div class="pi-role">Assistant Professor in Neurology, HMS &bull; MGH</div>
+                </div>
+              </div>
+              <p style="font-size:0.84rem;color:var(--text-secondary);">
+                Intraoperative single-neuron Neuropixels, organic PEDOT:PSS sensors, direct electrical brain stimulation, and cancer neuroscience.
+              </p>
+              <a href="./people/index.html#pi-labs" style="font-size:0.8rem;font-weight:700;margin-block-start:auto;">View Lab Profile &rarr;</a>
+            </article>
+
+            <article class="pi-card">
+              <div class="pi-card__header">
+                <img src="./photos/RinaZelmann_headshot.png" alt="Dr. Rina Zelmann" class="pi-avatar" width="64" height="64" loading="lazy" />
+                <div>
+                  <span class="pi-lab-tag">Zelmann Lab</span>
+                  <h3 class="pi-name">Dr. Rina Zelmann, PhD</h3>
+                  <div class="pi-role">Assistant Professor in Neurology, HMS &bull; MGH</div>
+                </div>
+              </div>
+              <p style="font-size:0.84rem;color:var(--text-secondary);">
+                Closed-loop intracranial electrical stimulation (CLoSES), sleep spindles, oscillations, and cognitive neuromodulation.
+              </p>
+              <a href="./people/index.html#pi-labs" style="font-size:0.8rem;font-weight:700;margin-block-start:auto;">View Lab Profile &rarr;</a>
+            </article>
+
+            <article class="pi-card">
+              <div class="pi-card__header">
+                <img src="./photos/PariyaSalami_headshot.png" alt="Dr. Pariya Salami" class="pi-avatar" width="64" height="64" loading="lazy" />
+                <div>
+                  <span class="pi-lab-tag">Salami Lab</span>
+                  <h3 class="pi-name">Dr. Pariya Salami, PhD</h3>
+                  <div class="pi-role">Instructor in Neurology, HMS &bull; MGH</div>
+                </div>
+              </div>
+              <p style="font-size:0.84rem;color:var(--text-secondary);">
+                Seizure onset and termination dynamics, thalamocortical synchrony, and quantitative intracranial EEG biomarkers.
+              </p>
+              <a href="./people/index.html#pi-labs" style="font-size:0.8rem;font-weight:700;margin-block-start:auto;">View Lab Profile &rarr;</a>
+            </article>
+
+            <article class="pi-card">
+              <div class="pi-card__header">
+                <img src="./photos/PeterHadar_headshot.png" alt="Dr. Peter Hadar" class="pi-avatar" width="64" height="64" loading="lazy" />
+                <div>
+                  <span class="pi-lab-tag">Hadar Lab</span>
+                  <h3 class="pi-name">Dr. Peter Hadar, MD, MSc</h3>
+                  <div class="pi-role">Instructor in Neurology, HMS &bull; MGH &bull; BWH</div>
+                </div>
+              </div>
+              <p style="font-size:0.84rem;color:var(--text-secondary);">
+                AI in neurology &amp; neuroscience of AI (mechanistic interpretability, representation engineering), neurotechnology, and cancer neuroscience.
+              </p>
+              <a href="./people/index.html#pi-labs" style="font-size:0.8rem;font-weight:700;margin-block-start:auto;">View Lab Profile &rarr;</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. For Patients, Families & Clinical Research Participants (Coma Recovery Lab & Brain Modulation Lab Inspired) -->
+      <section id="patient-guide" class="band band--aqua">
+        <div class="container">
+          <div class="editorial-hero__grid">
+            <div>
+              <div class="eyebrow-tag" style="background:var(--bg-surface);">Human-Centered Clinical Research</div>
+              <h2 class="section-title">For Patients, Families &amp; Research Volunteers</h2>
+              <p class="section-desc" style="margin-block-end:1.25rem;">
+                Every discovery in the NeuroHINTS Labs is made possible by the generosity and partnership of patients and families undergoing care at Massachusetts General Hospital and Brigham and Women&rsquo;s Hospital.
+              </p>
+              <p style="font-size:0.94rem;color:var(--text-secondary);margin-block-end:1.5rem;">
+                Participation in our studies is completely voluntary, never alters or delays your clinical care, and is overseen by the Mass General Brigham Institutional Review Board (IRB).
+              </p>
+              <div style="display:flex;flex-wrap:wrap;gap:0.75rem;">
+                <a href="./contact/index.html#patients" class="btn btn--primary">Patient &amp; Family FAQ &rarr;</a>
+                <a href="mailto:scash@mgh.harvard.edu" class="btn btn--secondary">Contact Clinical Research Coordinator</a>
+              </div>
+            </div>
+
+            <div class="patient-accordion">
+              <details class="patient-details" name="patient-faq" open>
+                <summary>What happens during Epilepsy Monitoring Unit (EMU) research?</summary>
+                <p>
+                  Patients who are already scheduled for intracranial sEEG monitoring as part of their standard epilepsy evaluation may optionally play brief computer games, listen to words, or rest quietly while we record natural brain signals through the existing clinical electrodes.
+                </p>
+              </details>
+              <details class="patient-details" name="patient-faq">
+                <summary>How does intraoperative research work during neurosurgery?</summary>
+                <p>
+                  During planned awake or asleep neurosurgical procedures (such as tumor resection, deep brain stimulation, or epilepsy surgery), our team collaborates closely with your neurosurgeon to record high-resolution cortical signals for 10&ndash;15 minutes within the approved clinical workflow.
+                </p>
+              </details>
+              <details class="patient-details" name="patient-faq">
+                <summary>How can trainees, fellows, or visiting scholars join the labs?</summary>
+                <p>
+                  We actively mentor postdoctoral fellows, neurology/neurosurgery residents, PhD students (Harvard/MIT), and research engineers across our five labs. Visit our <a href="./contact/index.html">Contact &amp; Opportunities page</a> to inquire.
+                </p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Native Search Dialog -->
+    <dialog id="search-dialog" class="site-dialog" aria-labelledby="search-dialog-title">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-block-end:1rem;">
+        <h2 id="search-dialog-title" style="font-size:1.15rem;font-weight:800;">Search NeuroHINTS Labs</h2>
+        <form method="dialog"><button type="submit" class="nav-icon-btn">Close (Esc)</button></form>
+      </div>
+      <search>
+        <label for="global-search-input" class="visually-hidden">Search teams, PIs, publications, or pipelines</label>
+        <input id="global-search-input" type="search" placeholder="Search teams, PIs (Cash, Paulk, Zelmann, Salami, Hadar), Neuropixels, CLoSES..." style="inline-size:100%;padding:0.75rem 1rem;border-radius:0.5rem;border:1px solid var(--border-strong);background:var(--bg-surface-elevated);margin-block-end:1rem;" />
+      </search>
+      <div style="display:grid;gap:0.5rem;max-block-size:20rem;overflow-y:auto;">
+        <a href="./research/epilepsy-neuromodulation/index.html" data-search-item class="group-tile" style="padding:0.75rem 1rem;"><div><strong>Epilepsy &amp; Neuromodulation Team</strong><div style="font-size:0.8rem;color:var(--text-muted);">Cash, Paulk, Zelmann &amp; Salami Labs &bull; Seizure dynamics, sEEG &amp; SPES/CCEP</div></div></a>
+        <a href="./research/cognition-sleep/index.html" data-search-item class="group-tile" style="padding:0.75rem 1rem;"><div><strong>Cognition &amp; Sleep Team</strong><div style="font-size:0.8rem;color:var(--text-muted);">Cash, Paulk, Zelmann &amp; Hadar Labs &bull; Memory consolidation, slow oscillations &amp; thalamic loops</div></div></a>
+        <a href="./research/neurotechnology/index.html" data-search-item class="group-tile" style="padding:0.75rem 1rem;"><div><strong>Neurotechnology Team</strong><div style="font-size:0.8rem;color:var(--text-muted);">Cash, Paulk, Zelmann &amp; Hadar Labs &bull; Intraoperative Neuropixels, PEDOT:PSS &amp; CLoSES</div></div></a>
+        <a href="./research/cancer-neuroscience/index.html" data-search-item class="group-tile" style="padding:0.75rem 1rem;"><div><strong>Cancer Neuroscience Team</strong><div style="font-size:0.8rem;color:var(--text-muted);">Paulk &amp; Hadar Labs &bull; Glioblastoma-neuron interactions &amp; awake craniotomy mapping</div></div></a>
+        <a href="./research/ai-neurology/index.html" data-search-item class="group-tile" style="padding:0.75rem 1rem;"><div><strong>AI in Neurology and Neuroscience of AI Team</strong><div style="font-size:0.8rem;color:var(--text-muted);">Cash &amp; Hadar Labs &bull; Foundation models, mechanistic interpretability &amp; representation engineering</div></div></a>
+        <a href="./people/index.html" data-search-item class="group-tile" style="padding:0.75rem 1rem;"><div><strong>People &amp; Affiliated PI Labs (18 Researchers)</strong><div style="font-size:0.8rem;color:var(--text-muted);">Dr. Sydney Cash, Dr. Angelique Paulk, Dr. Rina Zelmann, Dr. Pariya Salami, Dr. Peter Hadar</div></div></a>
+        <a href="./resources/index.html" data-search-item class="group-tile" style="padding:0.75rem 1rem;"><div><strong>Open-Source Pipelines, Atlases &amp; Media</strong><div style="font-size:0.8rem;color:var(--text-muted);">CLoSES, CDAC, BrainGate, Nature 2022/2024 Neuropixels datasets &amp; lab podcast/talks</div></div></a>
+      </div>
+    </dialog>
+
+    <!-- Institutional Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="inst-logos-bar">
+          <img src="./photos/mgb_logo_white.svg" alt="Mass General Brigham" width="160" height="24" loading="lazy" />
+          <img src="./photos/mgh_logo.svg" alt="Massachusetts General Hospital" width="140" height="28" loading="lazy" />
+          <img src="./photos/bwh_logo.svg" alt="Brigham and Women's Hospital" width="140" height="28" loading="lazy" />
+          <img src="./photos/hms_logo.svg" alt="Harvard Medical School" width="140" height="28" loading="lazy" />
+        </div>
+        <div class="site-footer__grid">
+          <div>
+            <div style="display:flex;align-items:center;gap:0.65rem;margin-block-end:0.75rem;">
+              <img src="./photos/neurohints_mark.svg" alt="" width="40" height="34" loading="lazy" />
+              <strong style="color:#ffffff;font-size:1.1rem;">NeuroHINTS Labs</strong>
+            </div>
+            <p style="font-size:0.86rem;color:#9CC2DF;line-height:1.6;">
+              Human Intracranial Neurophysiology, Neurotechnology &amp; Stimulation across Massachusetts General Hospital, Brigham and Women&rsquo;s Hospital, and Harvard Medical School.
+            </p>
+          </div>
+          <div>
+            <h3>Research Groups</h3>
+            <ul>
+              <li><a href="./research/epilepsy-neuromodulation/index.html">Stimulation &amp; Epilepsy Groups</a></li>
+              <li><a href="./research/cognition-sleep/index.html">Sleep &amp; Cognitive Groups</a></li>
+              <li><a href="./research/cancer-neuroscience/index.html">Tumor Group (Cancer Neuroscience)</a></li>
+              <li><a href="./research/ai-neurology/index.html">NeuroTechnology &amp; NeuroAI Group</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Affiliated PI Labs</h3>
+            <ul>
+              <li><a href="https://cashlab.mgh.harvard.edu/" target="_blank" rel="noopener noreferrer">Cash Lab (MGH / HMS)</a></li>
+              <li><a href="./people/index.html#pi-labs">Paulk Lab (MGH / HMS)</a></li>
+              <li><a href="./people/index.html#pi-labs">Zelmann Lab (MGH / HMS)</a></li>
+              <li><a href="./people/index.html#pi-labs">Salami Lab (MGH / HMS)</a></li>
+              <li><a href="./people/index.html#pi-labs">Hadar Lab (HMS &bull; MGH &bull; BWH)</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Explore &amp; Connect</h3>
+            <ul>
+              <li><a href="./index.html#media-lab-life">Media, Talks &amp; Lab Life</a></li>
+              <li><a href="./resources/index.html">Open Pipelines &amp; Publications</a></li>
+              <li><a href="./contact/index.html#patients">Patient &amp; Family Guide</a></li>
+              <li><a href="mailto:scash@mgh.harvard.edu">scash@mgh.harvard.edu</a></li>
+            </ul>
+          </div>
+        </div>
+        <div style="font-size:0.78rem;color:#7BA3C4;display:flex;flex-wrap:wrap;justify-content:space-between;gap:0.75rem;padding-block-start:1rem;border-block-start:1px solid rgba(176,227,226,0.12);">
+          <span>&copy; 2025 NeuroHINTS Labs &bull; Mass General Brigham &amp; Harvard Medical School. All rights reserved.</span>
+          <span>Editorial &amp; Multimedia Architecture v2 (ndm-website2)</span>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
